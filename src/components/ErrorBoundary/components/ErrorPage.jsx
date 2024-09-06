@@ -21,9 +21,6 @@ const ErrorPage = () => {
             Go Home
           </Link>
         </div>
-        <div className="mt-20">
-          <img src="/assets/images/error.png" alt="Error" />
-        </div>
       </div>
     </div>
   );

@@ -1,0 +1,85 @@
+import React from "react";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
+
+const Footer = () => {
+  return (
+    <footer className="bg-blue-800  text-white">
+      <div className="flex items-center justify-between p-6">
+        <img src="/assets/Logo.webp" alt="Logo" className="w-14 " />
+        <div className="flex items-center">
+          <FaLinkedin size={25} className="cursor-pointer mx-4" />
+          <FaFacebook size={25} className="cursor-pointer mx-4" />
+          <FaInstagram size={25} className="cursor-pointer mx-4" />
+        </div>
+      </div>
+      <div className="px-6">
+        <hr class="text-white w-full" />
+      </div>
+      <div className="container mx-auto py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <p className="mt-4">
+            Saeedan Technology is a leading software development company located
+            in Lahore, Pakistan. We are committed to developing innovative
+            software solutions for leading enterprises worldwide.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Have a Question?</h3>
+          <div className="flex items-center mb-2">
+            <span className="material-icons">phone</span>
+            <span className="ml-2">+92 300 7861566</span>
+          </div>
+          <div className="flex items-center">
+            <span className="material-icons">email</span>
+            <span className="ml-2">contact@saeedantechpvt.com</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Explore</h3>
+          <ul className="space-y-2">
+            <li>
+              <a href="#" className="hover:text-gray-300">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-300">
+                Team
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-300">
+                Company
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-300">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-300">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-gray-300">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="border-t border-white mt-8 py-4">
+        <div className="container mx-auto flex justify-center items-center">
+          <p>&copy; 2024 | All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
