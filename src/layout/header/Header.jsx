@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { GiHamburgerMenu, GiCancel } from "react-icons/gi"; // Import icons from react-icons
+import { GiHamburgerMenu, GiCancel } from "react-icons/gi";
 import Button from "../../components/Button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [hasShadow, setHasShadow] = useState(false);
   const navLinks = [
     { name: "Services", to: "/services" },
     { name: "Team", to: "/team" },
@@ -15,8 +15,25 @@ const Header = () => {
     { name: "Blog", to: "/blog" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setHasShadow(true);
+      } else {
+        setHasShadow(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="bg-primary text-white">
+    <header
+      className={`bg-primary text-white sticky top-0 z-50 transition-shadow duration-300 ${
+        hasShadow ? "shadow-lg" : ""
+      }`}
+    >
       <div className="container mx-auto flex justify-between items-center py-4">
         <div className="flex items-center space-x-2">
           <img src="/assets/Logo.webp" alt="Logo" className="w-16" />
@@ -27,11 +44,19 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-white focus:outline-none"
           >
-            {isMenuOpen ? <GiCancel size={24} /> : <GiHamburgerMenu size={24} />}
+            {isMenuOpen ? (
+              <GiCancel size={24} />
+            ) : (
+              <GiHamburgerMenu size={24} />
+            )}
           </button>
         </div>
 
-        <nav className={`md:flex ${isMenuOpen ? "flex" : "hidden"} space-x-6 md:space-x-8`}>
+        <nav
+          className={`md:flex ${
+            isMenuOpen ? "flex" : "hidden"
+          } space-x-6 md:space-x-8`}
+        >
           {navLinks.map((link, index) => (
             <Link
               key={index}
@@ -44,15 +69,12 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* <a
-          href="#contact"
-          className="hidden md:block text-blue-900 bg-white hover:bg-blue-100 border border-blue-900 px-6 py-2 rounded-md transition duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
+        <Link
+          to="/contact-us"
+          className="text-blue-800 bg-white hover:bg-gray-100 border border-white px-4 py-2 rounded-md transition duration-300"
         >
-          Contact Us
-        </a> */}
-        <div>
-          <Button>Contact Us</Button>
-        </div>
+          Contact us
+        </Link>
       </div>
     </header>
   );
