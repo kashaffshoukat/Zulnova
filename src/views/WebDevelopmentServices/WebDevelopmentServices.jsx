@@ -10,22 +10,23 @@ import GetInTouch from '../../components/GetInTouch/GetInTouch'
 import MainFeatures from '../../components/MainFeatures'
 import OurProcess from '../../components/OurProcess'
 import TeamSlider from '../../components/TeamSlider'
+import './abc.css'
 const MobileAppServices = () => {
   return (
  <>
  <WebDevelopmentServicesTop/>
  <WebServicesSlider/>
- <div className='px-20 py-12'>
+ <div className='px-20'>
  <WebServicesCards/>
   <Benefits/>
   <Testimonial/>
   <TechnologyStack/>
   <MainFeatures/>
   <OurProcess/>
+  </div>
   <TeamSlider/>
-  {/* <FAQS/> */}
-  {/* <GetInTouch /> */}
- </div>
+  <FAQS/>
+  <GetInTouch />
  </>
   )
 }

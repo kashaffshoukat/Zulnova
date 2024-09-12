@@ -7,7 +7,7 @@ import { teampic } from "../../assets";
 const Team = () => {
   return (
     <Page title="Saeedan Team">
-      <div className="md:px-20 md:py-12 px-2 py-2">
+      <div className="md:px-10 md:py-12 px-2 py-2">
 
         <TopSectionComponent description={` We're a team of makers, thinkers, and explorers. We approach
               work and play with curiosity and experimentation, using what we
