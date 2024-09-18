@@ -32,10 +32,14 @@ export default function Router() {
           element: <Careers />,
         },
         { path: "/WebDevelopmentServices", element: <WebDevelopmentServices /> },
+       
         {
           path: "/job-application",
           element: <JobApplication />,
-        },
+        }
+       
+        ,
+
         {
           path: "/contact-us",
           element: <ContactUs />,
