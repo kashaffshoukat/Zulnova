@@ -14,7 +14,6 @@ const Header = () => {
     { name: "Portfolio", to: "/portfolio" },
     { name: "Careers", to: "/careers" },
     { name: "Blog", to: "/blog" },
-    // { name: "WebDevelopmentServices", to: "/WebDevelopmentServices" },
   ];
 
   useEffect(() => {
@@ -32,63 +31,50 @@ const Header = () => {
 
   return (
     <header
-      className={`bg-primary text-white sticky top-0 z-50 transition-shadow duration-300 ${hasShadow ? "shadow-lg" : ""
-        }`}
+      className={`bg-primary text-white sticky top-0 z-50 transition-shadow duration-300 ${hasShadow ? "shadow-lg" : ""}`}
     >
-      <div className="mx-auto flex justify-between items-center py-4 px-16">
-        <div className="flex items-center space-x-2">
-          <Link to="/">
-            <img
-              src="/assets/Logo.webp"
-              alt="Logo"
-              className="w-16 cursor-pointer"
-            />
-          </Link>
-        </div>
-
-        <div className="flex items-center md:hidden">
+      <div className={`flex justify-between items-center py-4 px-16 ${isMenuOpen ? "transition-transform transform translate-y-0" : "transition-transform transform md:-translate-y-0 -translate-y-2"}`}>
+        {!isMenuOpen && (
+          <div className="flex items-center space-x-2">
+            <Link to="/">
+              <img src="/assets/Logo.webp" alt="Logo" className="w-16 cursor-pointer" />
+            </Link>
+          </div>
+        )}
+        <div className="absolute right-7 top-9 md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-white focus:outline-none"
           >
-            {isMenuOpen ? (
-              <GiCancel size={24} />
-            ) : (
-              <GiHamburgerMenu size={24} />
-            )}
+            {isMenuOpen ? <GiCancel size={24} /> : <GiHamburgerMenu size={24} />}
           </button>
         </div>
 
-        <nav
-          className={`md:flex ${isMenuOpen ? "flex" : "hidden"
-            } space-x-6 md:space-x-8`}
-        >
+        <nav className={`flex flex-col gap-5 md:flex-row md:space-x-8 ${isMenuOpen ? "block w-full  items-center" : "hidden md:flex"}`}>
           {navLinks.map((link, index) => (
             <Link
               key={index}
               to={link.to}
-              className={`relative group text-xl transition duration-300 ${location.pathname === link.to
-                ? "text-yellow-400"
-                : "hover:text-yellow-400"
-                }`}
+              className={`relative group text-xl text-center transition duration-300 ${location.pathname === link.to ? "text-yellow-400" : ""}`}
             >
               {link.name}
               <span
-                className={`absolute left-0 -bottom-1 w-full h-0.5 bg-yellow-400 transform transition-transform duration-300 ${location.pathname === link.to
-                  ? "scale-x-100"
-                  : "scale-x-0 group-hover:scale-x-100"
-                  }`}
+                className={`absolute left-0 -bottom-1 w-full h-0.5 bg-yellow-400 transform transition-transform duration-300 ${location.pathname === link.to ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}
               ></span>
             </Link>
           ))}
         </nav>
 
-        <Link
-          to="/contact-us"
-          className="text-blue-800 bg-white hover:bg-gray-100 border border-white px-4 py-2 rounded-md transition duration-300"
-        >
-          Contact us
-        </Link>
+        {!isMenuOpen && (
+          <div className="hidden lg:block">
+            <Link
+              to="/contact-us"
+              className="text-blue-800 bg-white hover:bg-gray-100 border border-white px-4 py-2 rounded-md transition duration-300"
+            >
+              Contact us
+            </Link>
+          </div>
+        )}
       </div>
     </header>
   );
