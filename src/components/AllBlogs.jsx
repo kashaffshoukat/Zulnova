@@ -27,7 +27,7 @@ const AllBlogs = ({ blogs }) => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:py-8">
                 {blogs.map((blog, index) => (
-                    <Link key={index} to={`/blog/${blog.slug_url}`}>
+                    <Link key={index} to={`/blog/${blog.slug_url, blog}`}>
                         <div className="bg-white p-5 rounded-lg shadow-lg transition-transform transform hover:scale-105">
                             <img
                                 src={`${imageUrl}${blog.img}`}
