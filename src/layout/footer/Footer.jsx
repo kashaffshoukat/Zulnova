@@ -1,10 +1,17 @@
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaPinterest } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
+import { Link, useNavigate } from "react-router-dom";
 const Footer = () => {
+  const navigate =useNavigate()
+
+  const gohome=()=>{
+    navigate('/')
+  }
   return (
     <footer className="bg-primary  text-white px-4">
       <div className="flex items-center justify-between py-6">
@@ -14,10 +21,13 @@ const Footer = () => {
           className="w-14  object-cover "
           alt="Logo"
         />
+        <img onClick={gohome} src="/assets/Logo.webp" alt="Logo" className="w-14 cursor-pointer " />
         <div className="flex items-center">
-          <FaLinkedin size={25} className="cursor-pointer mx-4" />
-          <FaFacebook size={25} className="cursor-pointer mx-4" />
-          <FaInstagram size={25} className="cursor-pointer mx-4" />
+          <a href="https://www.linkedin.com/company/saeedan-technology-pvt-ltd/posts/" target="_blank"><FaLinkedin  size={25} className="cursor-pointer mx-4" /></a>
+         <a href="https://www.facebook.com/saeedantechnologyofficial" target="_blank"><FaFacebook  size={25} className="cursor-pointer mx-4" /></a>
+         <a href="https://www.instagram.com/saeedantechnology/" target="_blank"><FaInstagram size={25} className="cursor-pointer mx-4" /></a>
+         <a href="https://www.pinterest.com/saeedantechnology/" target="_blank"><FaPinterest size={25} className="cursor-pointer mx-4" /></a>
+
         </div>
       </div>
       <div className="py-0">
@@ -55,36 +65,37 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Explore</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:text-gray-300">
+              <Link to="/services" className="hover:text-gray-300">
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">
+              <Link to="/team" className="hover:text-gray-300">
                 Team
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">
-                Company
-              </a>
+              <Link to="/company" className="hover:text-gray-300">
+             Company
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">
+              <Link to="/portfolio" className="hover:text-gray-300">
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">
-                Careers
-              </a>
+              <Link to="/careers" className="hover:text-gray-300">
+              Careers
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">
-                Blog
-              </a>
+              <Link to="/blog" className="hover:text-gray-300">
+              Blog
+              </Link>
             </li>
           </ul>
+
         </div>
       </div>
 
