@@ -1,14 +1,18 @@
 import React from "react";
-import { FaPhp, FaLaravel, FaReact, FaWordpress, FaShopify, FaWix } from "react-icons/fa";
+import { FaPhp, FaLaravel, FaReact, FaWordpress, FaShopify, FaWix, FaLanguage } from "react-icons/fa";
 import { FaAndroid } from "react-icons/fa";
 import { TbArrowBarBoth, TbBrandWebflow } from "react-icons/tb";
 import { BsApple } from "react-icons/bs";
-import { RiFlutterFill } from "react-icons/ri";
+import { RiComputerLine, RiFlutterFill } from "react-icons/ri";
 import { TiSocialAtCircular } from "react-icons/ti";
-import { SiWebtrees, SiBotblecms } from "react-icons/si";
+import { SiWebtrees, SiBotblecms, SiMicropython } from "react-icons/si";
 import RootDesign from "./components/RootDesign";
 import GetInTouch from "../../components/GetInTouch/GetInTouch";
 import { FaShop } from "react-icons/fa6";
+import { SiPython } from "react-icons/si";
+import { FcPhoneAndroid } from "react-icons/fc";
+import { LiaIndustrySolid, LiaLanguageSolid } from "react-icons/lia";
+import { CgWebsite } from "react-icons/cg";
 
 const ServiceItem = ({ text }) => (
   <div className="text-center">
@@ -19,28 +23,42 @@ const ServiceItem = ({ text }) => (
 );
 
 const services = [
-  { name: "PHP Dev", icon: <FaPhp size={50} /> },
-  { name: "Laravel Dev", icon: <FaLaravel size={50} /> },
-  { name: "React JS", icon: <FaReact size={50} /> },
-  { name: "E-Commerce Site", icon: <FaShop size={50} /> },
-  { name: "Web Portal", icon: <SiWebtrees size={50} /> },
+  { name: "PHP Dev", icon: <FaPhp size={50} /> ,hoverText: "PHP Development Services"},
+  { name: "Laravel Dev", icon: <FaLaravel size={50}/>,hoverText: "Laravel Development Services"},
+  { name: "React JS", icon: <FaReact size={50} />, hoverText: "React Development Services"},
+  { name: "E-Commerce Site", icon: <FaShop size={50}/>,hoverText: "E-Commerce Solutions"  },
+  { name: "Web Portal", icon: <SiWebtrees size={50}/>,hoverText: "Custom Web Portals" },
 ];
 
 const app_dev = [
-  { name: "Android App", icon: <FaAndroid size={50} /> },
-  { name: "Hybrid App Dev", icon: <TbArrowBarBoth size={50} /> },
-  { name: "IOS", icon: <BsApple size={50} /> },
-  { name: "Flutter", icon: <RiFlutterFill size={50} /> },
-  { name: "Social Apps", icon: <TiSocialAtCircular size={50} /> },
+  { name: "Android App", icon: <FaAndroid size={50} />, hoverText: "Android App Development" },
+  { name: "Hybrid App Dev", icon: <TbArrowBarBoth size={50} />, hoverText: "Hybrid App Solutions" },
+  { name: "IOS", icon: <BsApple size={50} />, hoverText: "iOS App Development" },
+  { name: "Flutter", icon: <RiFlutterFill size={50} />, hoverText: "Flutter App Development" },
+  { name: "Social Apps", icon: <TiSocialAtCircular size={50} />, hoverText: "Social Application Development" },
 ];
 
+
 const cms = [
-  { name: "Wordpress", icon: <FaWordpress size={50} /> },
-  { name: "Web Flow", icon: <TbBrandWebflow size={50} /> },
-  { name: "Shopify", icon: <FaShopify size={50} /> },
-  { name: "Custom Cms", icon: <SiBotblecms size={50} /> },
-  { name: "Wix", icon: <FaWix size={50} /> },
+  { name: "Wordpress", icon: <FaWordpress size={50} />, hoverText: "WordPress Development"  },
+  { name: "Web Flow", icon: <TbBrandWebflow size={50} />, hoverText: "Web Flow Solutions"  },
+  { name: "Shopify", icon: <FaShopify size={50} />, hoverText: "Shopify Development"  },
+  { name: "Custom Cms", icon: <SiBotblecms size={50} />,hoverText: "Custom CMS Solutions"  },
+  { name: "Wix", icon: <FaWix size={50} />,hoverText: "Wix Development"  },
 ];
+const crm = [
+  { name: "CRM Integration with AI & Machine Learning", icon: <SiPython size={50} />, hoverText: " CRM Integration with AI & Machine Learning" },
+  { name: "CRM Mobile Application Development", icon: <FcPhoneAndroid size={50} />, hoverText: " CRM Mobile Application Development" },
+  { name: "Custom CRM Development", icon: <SiBotblecms size={50} /> , hoverText: "Custom CRM Solutions"},
+  { name: "Full-Stack Custom CRM Design from Scratch", icon: <CgWebsite size={50} />, hoverText: "Full-Stack Custom CRM Design from Scratch" },
+  { name: "Industry-Tailored CRM Solutions", icon: <LiaIndustrySolid size={50} />, hoverText: "Industry-Tailored CRM Solutions"  }
+]
+const mls=[
+  {name:"CML Models",icon:<SiMicropython size={40} />,hoverText:"Custom Machine Learning Models"},
+  {name:"NLP Solutions",icon:<LiaLanguageSolid size={50} />,hoverText:"Natural Language Processing (NLP) Solutions"},
+  {name:"CV Solutions",icon:<RiComputerLine size={50} />,hoverText:"Computer Vision Solutions"},
+
+]
 
 const ServicesDeliver = () => {
   return (
@@ -81,6 +99,22 @@ const ServicesDeliver = () => {
           desc="CMS Solution Ready to unlock the potential of your content? Contact us today for a free consultation and discover how our CMS solutions can transform your website."
           btn="Visit Our CMS Solution Services"
         />
+        <div className="md:px-24 p-0">
+          <RootDesign
+            services={crm}
+            title="CRM"
+            sub="Services"
+          btn="Visit Our CRM Solution Services"
+
+          />
+            </div>
+           <RootDesign
+            services={mls}
+            title="Machine Learning"
+            sub="Services"
+          btn="Visit Our MLS Solution Services"
+
+          />
       </div>
       <GetInTouch />
     </div>

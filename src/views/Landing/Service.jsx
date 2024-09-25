@@ -2,7 +2,11 @@ import React from 'react';
 import ServiceHomeCard from '../../components/ServiceHomeCard';
 import { MdWeb, MdSecurity, MdSpeed } from 'react-icons/md';
 import Button from '../../components/Button';
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRightLong, FaMobileButton } from "react-icons/fa6";
+import { SiAltiumdesigner, SiBotblecms, SiMicropython } from 'react-icons/si';
+import { CgWebsite } from 'react-icons/cg';
+import { LiaDigitalOcean } from 'react-icons/lia';
+import { CiMobile3 } from 'react-icons/ci';
 
 const servicesData = [
     {
@@ -28,7 +32,7 @@ const servicesData = [
         ]
     },
     {
-        icon: <MdSpeed />,
+        icon: <CiMobile3 />,
         mainHeading: 'Mobile App Development',
         subHeadings: [
             "Android App",
@@ -39,7 +43,7 @@ const servicesData = [
         ]
     },
     {
-        icon: <MdSpeed />,
+        icon: <SiBotblecms />,
         mainHeading: 'CMS Development',
         subHeadings: [
             "WordPress",
@@ -50,7 +54,7 @@ const servicesData = [
         ]
     },
     {
-        icon: <MdSpeed />,
+        icon: <SiAltiumdesigner />,
         mainHeading: 'UI/UX Designing',
         subHeadings: [
             "Website Design",
@@ -60,7 +64,7 @@ const servicesData = [
         ]
     },
     {
-        icon: <MdSpeed />,
+        icon: <LiaDigitalOcean />,
         mainHeading: 'Digital Marketing',
         subHeadings: [
             "SEO",
@@ -68,6 +72,26 @@ const servicesData = [
             "SMM",
             "Social Media Management",
             "Brand Kits",
+        ]
+    },
+    {
+        icon: <CgWebsite />,
+        mainHeading: 'CRM Services',
+        subHeadings: [
+            "CRM Integration with AI & ML",
+            "CRM Mobile Application Development",
+            "Custom CRM Development",
+            "Full-Stack Custom CRM Design",
+            "Industry-Tailored CRM Solutions",
+        ]
+    },
+    {
+        icon: <SiMicropython />,
+        mainHeading: 'Machine Learning Services',
+        subHeadings: [
+            "Custom Machine Learning Models",
+            "NLP Solutions",
+            "Computer Vision Solutions",
         ]
     },
 ];
