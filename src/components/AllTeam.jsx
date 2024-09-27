@@ -1,6 +1,6 @@
 import React from 'react';
 import CustomTeamCard from './CustomTeamCard';
-import { ali, amir, anas, daniyal, fida, hamza, haseeb, moaz, mudasser, murtaza, rohan, salam, shahbaz, usama, zubair, pmbg, react, laravel, react2, hamzabg, python, salambg, amirbg, wajidbg, irfan, wajid } from '../assets';
+import { ali, amir, anas, daniyal, fida, hamza, haseeb, moaz, mudasser, murtaza, rohan, salam, shahbaz, usama, zubair, pmbg, react, laravel, react2, hamzabg, python, salambg, amirbg, wajidbg, irfan, wajid, newpic, newpic2 } from '../assets';
 
 const AllTeam = () => {
    
@@ -9,7 +9,7 @@ const data = [
       image: rohan,
       name: 'Ruhan Ahmad',
       position: 'Sr.Project Manager',
-      backgroundColor: '#D03AE9',
+      backgroundColor: '#008dad',
       backgroundImage: pmbg,
   },
   {
@@ -23,7 +23,7 @@ const data = [
       image: anas,
       name: 'Muhammad Anas',
       position: 'Sr.Laravel Developer',
-      backgroundColor: '#F005BC',
+      backgroundColor: '#ebc182',
       backgroundImage:laravel
 
   },
@@ -39,7 +39,7 @@ const data = [
       image: moaz,
       name:'Muhammad Moaz',
       position:'React JS Developer',
-      backgroundColor:'#0f3574',
+      backgroundColor:'#58788b',
       backgroundImage:react2
 
   },
@@ -128,7 +128,21 @@ const data = [
       position: 'Laravel Developer',
       backgroundColor: '#ebc182',
       backgroundImage:amirbg
-  }
+  },
+  {
+    image: newpic,
+    name: 'Haseeb Mushtaq',
+    position: 'Laravel Developer',
+    backgroundColor: '#ebc182',
+    backgroundImage:amirbg
+}
+,{
+    image: newpic2,
+    name: 'Haseeb Mushtaq',
+    position: 'Laravel Developer',
+    backgroundColor: '#c8cbff',
+    backgroundImage:amirbg
+}
 ];
     return (
         <div className='py-12 px-3'>
