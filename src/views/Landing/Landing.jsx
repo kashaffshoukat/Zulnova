@@ -64,36 +64,34 @@ const Landing = () => {
               />
             </div> */}
 
-
-<div className="relative flex flex-col gap-7 h-[70vh] items-center justify-center">
-      <div
-        className="absolute inset-0 bg-cover bg-center overflow-hidden"
-        style={{ backgroundImage: `url(${Landingbg3})` }}
-      >
-        <div className="absolute inset-0 bg-blue-950 opacity-70" />
-      </div>
-      <h1 className="text-7xl text-center text-white relative z-10">
-        Be the {" "}
-        <span className="underline underline-offset-8">
-        Trendsetter
-        </span> 
-        {" "}
-         in <br /> Your Digital Space
-      </h1>
-      <p className="text-3xl w-[80%] text-center text-white relative z-10">
-        Access elite software engineers with diverse expertise in 100+ technologies, working in your timezone
-      </p>
-      <div className="relative z-10">
-        <Button
-          // onClick={scrollToGetInTouch}
-          icon={<FaArrowRightLong />}
-          className={'border-white, text-white'}
-        >
-          Schedule Free Consultation
-        </Button>
-      </div>
-    </div>
-
+<div className="relative flex flex-col gap-7  h-[70vh] items-center justify-center">
+  <div
+    className="absolute inset-0 bg-cover bg-center overflow-hidden"
+    style={{ backgroundImage: `url(${landingbg2})` }}
+  >
+    <div className="absolute inset-0 bg-blue-950 opacity-70" />
+  </div>
+  <h1 className="text-5xl sm:text-6xl md:text-7xl text-center text-white relative z-10">
+    Be the {" "}
+    <span className="underline underline-offset-8">
+      Trendsetter
+    </span> 
+    {" "}
+    in <br /> Your Digital Space
+  </h1>
+  <p className="text-xl sm:text-2xl md:text-3xl w-[80%] text-center text-white relative z-10">
+    Access elite software engineers with diverse expertise in 100+ technologies, working in your timezone
+  </p>
+  <div className="relative z-10">
+    <Button
+      onClick={scrollToGetInTouch}
+      icon={<FaArrowRightLong />}
+      className={'border-white text-white'}
+    >
+      Schedule Free Consultation
+    </Button>
+  </div>
+</div>
 
 
 
@@ -108,7 +106,7 @@ const Landing = () => {
 
 
 
-         <div className="px-20 py-12">
+         <div className=" px-4 md:px-20 py-12">
           <Benefits />
           <Service getInTouchRef={getInTouchRef} />
           <PortolioSlider />
