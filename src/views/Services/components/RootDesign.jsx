@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import Button from "../../../components/Button";
 
 const RootDesign = ({ services = [], title, sub, desc, btn }) => {
   return (
@@ -16,12 +17,12 @@ const RootDesign = ({ services = [], title, sub, desc, btn }) => {
           ))}
         </div>
         <div className="mt-8">
-          <a
+          <button
             href="#"
             className="inline-block bg-blue-800 text-white py-2 px-6 rounded-full shadow-md hover:bg-blue-900 transition duration-300"
           >
             {btn}
-          </a>
+          </button>
         </div>
       </div>
     </div>

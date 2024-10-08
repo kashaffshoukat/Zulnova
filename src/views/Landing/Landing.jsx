@@ -19,7 +19,7 @@ const Landing = () => {
       getInTouchRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
-
+  
   return (
     <div className="overflow-hidden">
       <section className="bg-white">

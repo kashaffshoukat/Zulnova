@@ -24,6 +24,7 @@ const sliderSettings = {
   autoplaySpeed: 3000,
   centerMode: true,
   centerPadding: "30px",
+  
   responsive: [
     {
       breakpoint: 600,
@@ -111,11 +112,11 @@ const Testimonial = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="flex justify-center items-center p-4 sm:p-6 lg:p-10 h-full"
+            className="flex justify-center items-center p-4 sm:p-6 lg:p-10 "
           >
-            <div className="bg-gray-100 p-4 bg-[#f7f7f7] rounded-lg shadow-lg w-full h-full max-w-xs sm:max-w-md lg:max-w-lg overflow-hidden">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center">
+            <div className="bg-gray-100 p-4 bg-[#f7f7f7] rounded-lg shadow-lg w-full h-56 max-w-xs sm:max-w-md lg:max-w-lg flex flex-col justify-between">
+              <div className="flex items-center justify-between mb-4 ">
+                <div className="flex items-center " >
                   <LazyLoadImage
                     src={testimonial.icon}
                     effect="blur"

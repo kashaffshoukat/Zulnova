@@ -21,7 +21,7 @@ const TopSectionComponent = React.memo(
 
           {/* Image Section */}
           <div className="relative">
-            <div className="absolute -right-4 md:-right-6 lg:-right-8 top-4 md:top-6 lg:top-8 bg-red-500 w-8 md:w-12 lg:w-14 h-8 md:h-12 lg:h-14 rounded-full"></div>
+            <div className="absolute z-20 -right-4 md:-right-6 lg:-right-8 top-4 md:top-6 lg:top-8 bg-red-500 w-8 md:w-12 lg:w-14 h-8 md:h-12 lg:h-14 rounded-full"></div>
             <LazyLoadImage
               src={picture}
               effect="blur"
