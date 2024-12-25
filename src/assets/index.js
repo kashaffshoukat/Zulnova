@@ -52,6 +52,8 @@ import landingbg from "./landingbg.jpg";
 import bdbg from "./bdbg.jpg";
 import landingbg2 from "./lbg.jpg";
 import Landingbg3 from "./lbg2.jpg";
+import mehboob from './mehboob.png'
+import graphic from './graphic.jpg'
 export {
   teampic,
   teamAll,
@@ -74,10 +76,12 @@ export {
   haseeb,
   fida,
   react,
+  mehboob,
   laravel,
   react2,
   hamzabg,
   python,
+  graphic,
   salambg,
   amirbg,
   wajidbg,
