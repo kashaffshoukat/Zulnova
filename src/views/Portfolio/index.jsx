@@ -4,7 +4,7 @@ import LatestProjects from "./LatestProjects";
 
 const Portfolio = () => {
   return (
-    <Page title="Saeedan Portfolio">
+    <Page title="Zulnova Portfolio">
    
       <CustomTopComponent title1={'Our Portfolio'} description={'Redefine Your Business Processes With Our Powerful Automated Services.'} btnLabel={'Contact Us'} />
       <LatestProjects />

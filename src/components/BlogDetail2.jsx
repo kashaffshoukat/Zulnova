@@ -85,7 +85,7 @@ const BlogDetail2 = ({ blogs }) => {
                             {blogs?.authors?.map((val, ind) => (
                                 <div key={ind} className="flex items-center mb-2">
                                     <img
-                                         src={`https://test.saeedantechpvt.com/${val?.img}`}
+                                         src={`https://test.Zulnovatechpvt.com/${val?.img}`}
                                         className="h-12 w-12 rounded-full object-cover"
                                     />
                                     <div className="ml-2">
@@ -115,7 +115,7 @@ const BlogDetail2 = ({ blogs }) => {
                             {heading?.blog_content_images?.map((image, imgIndex) => (
                                 <div key={imgIndex} className="p-2 m-auto">
                                     <img
-                                         src={`https://test.saeedantechpvt.com/${image?.img}`}
+                                         src={`https://test.Zulnovatechpvt.com/${image?.img}`}
                                         alt={heading.link}
                                         className="h-[70vh] w-full object-cover "
                                         loading="lazy"

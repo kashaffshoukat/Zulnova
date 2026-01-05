@@ -43,7 +43,7 @@ const TechnologyStack = () => {
   return (
     <div ref={sectionRef} className="px-3 py-3 border rounded-lg">
       <div className="flex flex-col gap-2 items-center justify-center">
-        <h1 className={`text-3xl font-semibold text-[#2e5090] transition-all duration-1000 ${
+        <h1 className={`text-3xl font-semibold text-[#031942ff] transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
@@ -59,7 +59,7 @@ const TechnologyStack = () => {
       </div>
 
       <div className="mt-3">
-        <div className="flex flex-wrap mt-3 p-10 gap-14 rounded-lg bg-[#2e5090]">
+        <div className="flex flex-wrap mt-3 p-10 gap-14 rounded-lg bg-[#031942ff]">
           {frontenedicons.map((Icon, index) => (
             <Icon
               key={index}

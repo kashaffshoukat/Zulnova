@@ -72,7 +72,7 @@ const PortolioSlider = () => {
   return (
     <div className="py-12">
       <div className="flex flex-col gap-2 items-center justify-center py-4">
-        <h1 className="text-2xl sm:text-3xl text-[#2e5090] lg:text-4xl font-semibold">
+        <h1 className="text-2xl sm:text-3xl text-[#031942ff] lg:text-4xl font-semibold">
           Portfolio
         </h1>
         <h1 className="text-xl font-semibold">Our Latest Projects</h1>
@@ -87,7 +87,7 @@ const PortolioSlider = () => {
                 className={`flex flex-col gap-4 rounded-lg transition-all duration-500 px-4`}
               >
                 <LazyLoadImage
-                  src={`https://test.saeedantechpvt.com/${portFolio.first_content_image}`}
+                  src={`https://test.Zulnovatechpvt.com/${portFolio.first_content_image}`}
                   effect="blur"
                   className="w-full h-full flex object-cover rounded-lg"
                   alt={portFolio.portfolio_title || "Portfolio Image"}

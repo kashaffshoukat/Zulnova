@@ -64,14 +64,14 @@ const Testimonial = () => {
       author: "Patrick Stewart",
       icon: "src/assets/testiminials_avatar.webp",
       description:
-        '"This company was excellent. I will use them again and again. Saeedan technology team communicates well and is very detailed. Thank you for the amazing work."',
+        '"This company was excellent. I will use them again and again. Zulnova technology team communicates well and is very detailed. Thank you for the amazing work."',
       rating: 5,
     },
     {
       author: "Infrontus",
       icon: "src/assets/testiminials_avatar.webp",
       description:
-        '"Saeedan Technology Team are simply superb. Working and communicating with them was a pure pleasure. They understood my issue and helped me resolve it very fast. I would definitely recommend them to everyone."',
+        '"Zulnova Technology Team are simply superb. Working and communicating with them was a pure pleasure. They understood my issue and helped me resolve it very fast. I would definitely recommend them to everyone."',
       rating: 5,
     },
   ];
@@ -92,7 +92,7 @@ const Testimonial = () => {
               src="https://player.vimeo.com/video/941184818?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-              title="Testimonial - Saeedan Technology"
+              title="Testimonial - Zulnova Technology"
             ></iframe>
           </LazyLoadComponent>
         </div>

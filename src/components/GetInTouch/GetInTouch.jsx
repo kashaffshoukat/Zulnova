@@ -221,7 +221,7 @@ const GetInTouch = () => {
 
     try {
       const response = await fetch(
-        "https://test.saeedantechpvt.com/api/UserContactUs",
+        "https://formspree.io/f/xjgkkjok",
         {
           method: "POST",
           headers: {
@@ -262,8 +262,8 @@ const GetInTouch = () => {
         <div className="bg-gray-50 py-12">
           <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="text-black">Get in </span>
-              <span className="text-[#2e5090]">Touch</span>
+              <span className="text-[#031942ff]">Get in </span>
+              <span className="text-[#031942ff]">Touch</span>
             </h2>
             <p className="text-gray-600 mb-8">
               Ready to begin your web development journey? Share your contact

@@ -2,9 +2,18 @@ import React from 'react';
 
 const ServiceHomeCard = ({ icon, mainHeading, subHeadings }) => {
     return (
-        <div className="group bg-gradient-to-r from-blue-50 to-indigo-50 border border-gray-200 rounded-xl p-8 shadow-lg max-w-md h-full transform  hover:bg-gradient-to-r hover:from-blue-500 hover:to-indigo-500 hover:text-white transition-transform duration-300">
+        <div className="
+            group
+            bg-dark
+            border border-gray-200
+            rounded-xl p-8  max-w-md h-full
+            transform
+            hover:bg-[#031942ff]
+            hover:text-white
+            transition-all duration-300
+        ">
             {/* Icon */}
-            <p className="text-5xl text-blue-600 mb-6 flex justify-center items-center transition-colors duration-300 group-hover:text-white">
+            <p className="text-5xl text-blue-900 mb-6 flex justify-center items-center transition-colors duration-300 group-hover:text-white">
                 {icon}
             </p>
 

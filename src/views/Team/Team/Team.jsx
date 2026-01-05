@@ -7,7 +7,7 @@ import MainTeam from "./MainTeam";
 
 const Team = () => {
   return (
-    <Page title="Saeedan Team">
+    <Page title="Zulnova Team">
       <div className="md:px-8 md:py-12">
         <TopSectionComponent
           description={` We're a team of makers, thinkers, and explorers. We approach

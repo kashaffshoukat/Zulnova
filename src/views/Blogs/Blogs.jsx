@@ -21,7 +21,7 @@ const Blogs = () => {
 
   return (
     <>
-      <CustomTopComponent title1={'Saeedan Technology Blog'} description={'Blog about Technology, Business, Programming, Development, Marketing, and Artificial Intelligence'} btnLabel={'Contact Us'} />
+      <CustomTopComponent title1={'Zulnova Technology Blog'} description={'Blog about Technology, Business, Programming, Development, Marketing, and Artificial Intelligence'} btnLabel={'Contact Us'} />
       <div className='p-4'>
         <AllBlogs blogs={blogs} />
       </div>

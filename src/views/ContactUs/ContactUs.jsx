@@ -30,7 +30,7 @@ const ContactUs = () => {
             <div className="flex justify-center mb-4">
               <IoMdMail className="text-5xl md:text-7xl border border-white p-2 rounded-full" />
             </div>
-            <p>contact@saeedantechpvt.com</p>
+            <p>contact@Zulnovatechpvt.com</p>
           </div>
 
           <div className="text-center w-72">
@@ -39,21 +39,21 @@ const ContactUs = () => {
             </div>
             <div className="flex justify-center space-x-4">
               <a
-                href="https://www.linkedin.com/company/saeedan-technology-pvt-ltd/posts/"
+                href="https://www.linkedin.com/company/Zulnova-technology-pvt-ltd/posts/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedin className="text-2xl hover:text-gray-300" />
               </a>
               <a
-                href="https://www.facebook.com/saeedantechnologyofficial"
+                href="https://www.facebook.com/Zulnovatechnologyofficial"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaFacebookF className="text-2xl hover:text-gray-300" />
               </a>
               <a
-                href="https://www.instagram.com/saeedantechnology/"
+                href="https://www.instagram.com/Zulnovatechnology/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

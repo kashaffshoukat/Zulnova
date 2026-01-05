@@ -80,7 +80,7 @@ const BlogsDetailsComponent = () => {
             </div>
             <div className="flex justify-center items-center">
               <img
-                src={`https://test.saeedantechpvt.com/${singleBlogs.c_t_a.cta_top_image}`}
+                src={`https://test.Zulnovatechpvt.com/${singleBlogs.c_t_a.cta_top_image}`}
                 alt="CTA Image"
                 className="w-72 sm:w-96 md:w-[430px] lg:w-[430px] xl:w-[430px] h-auto"
               />

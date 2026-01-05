@@ -7,14 +7,14 @@ const TermsCondition = () => {
         <header>
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Terms & Conditions</h1>
           <p className="text-lg text-gray-600 leading-relaxed">
-            These terms and conditions ("Terms") govern your access to and use of the website and services provided by <strong className="text-primary">Saeedan Technology</strong>. By accessing or using our site, you agree to be bound by these Terms.
+            These terms and conditions ("Terms") govern your access to and use of the website and services provided by <strong className="text-primary">Zulnova Technology</strong>. By accessing or using our site, you agree to be bound by these Terms.
           </p>
         </header>
 
         <section>
           <h2 className="text-2xl font-semibold text-primary mb-3">1. Services Overview</h2>
           <p className="text-gray-700 leading-relaxed">
-            Saeedan Technology offers software development services including web development, mobile apps, UI/UX design, CRM systems, AI chatbots, and AI/ML solutions. These services are provided subject to the terms outlined here.
+            Zulnova Technology offers software development services including web development, mobile apps, UI/UX design, CRM systems, AI chatbots, and AI/ML solutions. These services are provided subject to the terms outlined here.
           </p>
         </section>
 
@@ -31,7 +31,7 @@ const TermsCondition = () => {
         <section>
           <h2 className="text-2xl font-semibold text-primary mb-3">3. Intellectual Property</h2>
           <p className="text-gray-700 leading-relaxed">
-            All content, code, designs, and branding created by Saeedan Technology remain our intellectual property unless otherwise agreed in writing. You may not reproduce, reuse, or redistribute our content without explicit permission.
+            All content, code, designs, and branding created by Zulnova Technology remain our intellectual property unless otherwise agreed in writing. You may not reproduce, reuse, or redistribute our content without explicit permission.
           </p>
         </section>
 
@@ -45,7 +45,7 @@ const TermsCondition = () => {
         <section>
           <h2 className="text-2xl font-semibold text-primary mb-3">5. Limitation of Liability</h2>
           <p className="text-gray-700 leading-relaxed">
-            Saeedan Technology shall not be held liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use our services, including any data loss or business disruption.
+            Zulnova Technology shall not be held liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use our services, including any data loss or business disruption.
           </p>
         </section>
 
@@ -81,7 +81,7 @@ const TermsCondition = () => {
           <h2 className="text-2xl font-semibold text-primary mb-3">10. Contact Us</h2>
           <p className="text-gray-700 leading-relaxed">For any questions regarding these Terms, contact us at:</p>
           <div className="mt-2 text-gray-700">
-            <p>Email: <a href="mailto:contact@saeedantechpvt.com" className="text-blue-600 hover:underline">contact@saeedantechpvt.com</a></p>
+            <p>Email: <a href="mailto:contact@Zulnovatechpvt.com" className="text-blue-600 hover:underline">contact@Zulnovatechpvt.com</a></p>
             <p>Phone: <a href="tel:+923007861566" className="text-blue-600">+92 300 7861566</a></p>
             <p>Address: <span className="text-blue-600">Commercial Plaza, B BLOCK, PCSIR Phase 2, Lahore, 54940</span></p>
           </div>

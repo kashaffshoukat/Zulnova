@@ -37,7 +37,7 @@ const BlogDetail = ({blogs}) => {
                         </div>
                         <div className="flex justify-center items-center">
                             <img
-                                src={`https://test.saeedantechpvt.com/${blogs.c_t_a.cta_top_image}`}
+                                src={`https://test.Zulnovatechpvt.com/${blogs.c_t_a.cta_top_image}`}
                                 alt="CTA Image"
                                 className="w-full h-[30vh] object-contain"
                             />

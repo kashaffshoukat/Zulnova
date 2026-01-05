@@ -55,7 +55,7 @@ const JobApplication = () => {
 
     try {
       const response = await fetch(
-        `https://test.saeedantechpvt.com/api/jobApplicationstore/${formValues.id}`,
+        `https://test.Zulnovatechpvt.com/api/jobApplicationstore/${formValues.id}`,
         {
           method: "POST",
           body: formData,

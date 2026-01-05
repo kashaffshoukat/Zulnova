@@ -117,7 +117,7 @@ const LatestProjects = React.memo(({ onFetch }) => {
             >
               {/* image */}
               <img
-                src={`https://test.saeedantechpvt.com/${portFolio.first_content_image}`}
+                src={`https://test.Zulnovatechpvt.com/${portFolio.first_content_image}`}
                 alt={portFolio.portfolio_title || "Portfolio Image"}
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -137,7 +137,7 @@ const LatestProjects = React.memo(({ onFetch }) => {
                 {portFolio?.banner_image && (
                   <a
                     className="text-white bg-primary rounded-md px-5 py-2 max-w-max"
-                    href={`https://test.saeedantechpvt.com/${portFolio.banner_image}`}
+                    href={`https://test.Zulnovatechpvt.com/${portFolio.banner_image}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: "none", color: "white" }}

@@ -34,15 +34,14 @@ const Landing = () => {
 
           {/* Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center text-white relative z-10">
-            Be the{" "}
-            <span className="underline underline-offset-8">Trendsetter</span>{" "}
+            Build the Future,{" "}
+            <span className="underline underline-offset-8">Side-by-Side</span>{" "}
             in <br className="hidden sm:block" /> Your Digital Space
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl sm:text-2xl md:text-3xl w-[80%] text-center text-white relative z-10">
-            Access elite software engineers with diverse expertise in 100+ technologies, working in your timezone.
-          </p>
+Scale your vision with world-class developers who speak your language and work your hours. Expert support across 100+ tech stacks.          </p>
 
           {/* Button */}
           <div className="relative z-10">

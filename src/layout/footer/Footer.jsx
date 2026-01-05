@@ -17,16 +17,16 @@ const Footer = () => {
       <div className="flex items-center justify-between py-6">
         <LazyLoadImage
           onClick={gohome}
-          src="/assets/Logo.webp"
+          src="/assets/logo.png"
           effect="blur"
           className="w-14 cursor-pointer  object-cover "
           alt="Logo"
         />
         <div className="flex items-center">
-          <a href="https://www.linkedin.com/company/saeedan-technology-pvt-ltd/posts/" target="_blank"><FaLinkedin size={25} className="cursor-pointer mx-4" /></a>
-          <a href="https://www.facebook.com/saeedantechnologyofficial" target="_blank"><FaFacebook size={25} className="cursor-pointer mx-4" /></a>
-          <a href="https://www.instagram.com/saeedantechnology/" target="_blank"><FaInstagram size={25} className="cursor-pointer mx-4" /></a>
-          <a href="https://www.pinterest.com/saeedantechnology/" target="_blank"><FaPinterest size={25} className="cursor-pointer mx-4" /></a>
+          <a href="https://www.linkedin.com/company/zulnova/" target="_blank"><FaLinkedin size={25} className="cursor-pointer mx-4" /></a>
+          <a href="https://www.linkedin.com/company/zulnova/" target="_blank"><FaFacebook size={25} className="cursor-pointer mx-4" /></a>
+          <a href="https://www.linkedin.com/company/zulnova/" target="_blank"><FaInstagram size={25} className="cursor-pointer mx-4" /></a>
+          <a href="https://www.linkedin.com/company/zulnova/" target="_blank"><FaPinterest size={25} className="cursor-pointer mx-4" /></a>
 
         </div>
       </div>
@@ -36,7 +36,7 @@ const Footer = () => {
       <div className="container mx-auto py-5 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <p className="mt-4">
-            Saeedan Technology is a leading software development company located
+            Zulnova Technology is a leading software development company located
             in Lahore, Pakistan. We are committed to developing innovative
             software solutions for leading enterprises worldwide.
           </p>
@@ -45,18 +45,18 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4">Have a Question?</h3>
           <div className="flex items-center mb-2">
-            <a href="tel:+923007861566" className="flex items-center">
+            <a href="tel:+92 321 1042860" className="flex items-center">
               <IoCall className="cursor-pointer" />
-              <span className="ml-2">+92 300 7861566</span>
+              <span className="ml-2">+92 321 1042860</span>
             </a>
           </div>
           <div className="flex items-center">
             <a
-              href="mailto:contact@saeedantechpvt.com"
+              href="mailto:hello.zulnova@gmail.com"
               className="flex items-center"
             >
               <MdEmail className="cursor-pointer" />
-              <span className="ml-2">contact@saeedantechpvt.com</span>
+              <span className="ml-2">hello.zulnova@gmail.com</span>
             </a>
           </div>
         </div>

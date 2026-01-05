@@ -9,8 +9,8 @@ const Company = () => {
 
 
   return (
-    <Page title="Saeedan Company">
-      <CustomTopComponent title1={'Unleash Your potential with us'} title2={'Excellence begin here'} description={'Saeedan Technology is a Strategic collaborator to empower your business through cutting-edge IT solutions. Let’s maximize your potential growth.'} btnLabel={'Contact Us'} />
+    <Page title="Zulnova Company">
+      <CustomTopComponent title1={'Unleash Your potential with us'} title2={'Excellence begin here'} description={'Zulnova Technology is a Strategic collaborator to empower your business through cutting-edge IT solutions. Let’s maximize your potential growth.'} btnLabel={'Contact Us'} />
       <Problem />
       <CEO_Section />
       <div className="py-4">

@@ -51,7 +51,7 @@ const Header = () => {
         <div className="flex items-center space-x-2">
           <Link to="/" onClick={handleLinkClick}>
             <LazyLoadImage
-              src="/assets/Logo.webp"
+              src="/assets/logo.png"
               effect="blur"
               className="w-16 cursor-pointer"
               alt="Logo"

@@ -30,7 +30,7 @@ const CEO_Section = () => {
 
                 <div className='flex flex-col justify-center p-4 md:p-8 z-40'>
                     <h2 className="text-xl md:text-3xl leading-tight font-semibold text-center md:text-left text-white mb-8">
-                        Mr Atif<br /><span className='text-white'>CEO</span> - Saeedan Technology
+                        Mr Atif<br /><span className='text-white'>CEO</span> - Zulnova Technology
                     </h2>
                     <h3 className="text-xl md:text-3xl font-semibold text-center md:text-left md:text-blue-800 text-white md:mt-8">
                         Our Vision

@@ -7,16 +7,16 @@ const PrivacyPolicy = () => {
                 <header>
                     <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Privacy Policy</h1>
                     <p className="text-lg text-gray-600 leading-relaxed">
-                        Your privacy is important to us at <strong className="text-primary">Saeedan Technology</strong>. This Privacy Policy
+                        Your privacy is important to us at <strong className="text-primary">Zulnova Technology</strong>. This Privacy Policy
                         describes how we collect, use, and protect your personal information when you visit our website
                         or use our services.
                     </p>
                 </header>
 
                 <section>
-                    <h2 className="text-2xl font-semibold text-primary mb-3">1. About Saeedan Technology</h2>
+                    <h2 className="text-2xl font-semibold text-primary mb-3">1. About Zulnova Technology</h2>
                     <p className="text-gray-700 leading-relaxed">
-                        Saeedan Technology is a premier software house specializing in Web Development, App Development,
+                        Zulnova Technology is a premier software house specializing in Web Development, App Development,
                         UI/UX Design, CRM solutions, AI Chatbot integrations, and AI/ML-driven products. We aim to deliver
                         cutting-edge digital solutions while respecting and protecting our users’ data.
                     </p>
@@ -97,7 +97,7 @@ const PrivacyPolicy = () => {
                         For any questions, concerns, or feedback related to our Privacy Policy, please contact us at:
                     </p>
                     <div className="mt-2 text-gray-700">
-                        <p>Email: <a href="mailto:contact@saeedantechpvt.com" className="text-blue-600 hover:underline">contact@saeedantechpvt.com</a></p>
+                        <p>Email: <a href="mailto:contact@Zulnovatechpvt.com" className="text-blue-600 hover:underline">contact@Zulnovatechpvt.com</a></p>
                         <p>Phone: <a href="+923007861566" className="text-blue-600"> +92 300 7861566 </a></p>
                         <p>Address: <span className="text-blue-600"> Commercial Plaza, B BLOCK Block B Pcsir Employees Phase 2 PCSIR Phase 2, Lahore, 54940</span></p>
                     </div>
